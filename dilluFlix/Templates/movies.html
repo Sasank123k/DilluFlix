@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/shangchi.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Shang Chi</h5>
+        <p>"If You Aim At Nothing, You Hit Nothing."</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/eternals.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Eternals</h5>
+        <p>"They Give Me Faith Again. And I See The Good In Humanity In Them Every Day."</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/shershah.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Shershah</h5>
+        <p>"There is no status greater than the status of a solder, there is no greater glory than the glory of the uniform, there is no religion greater than our country. "</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<!-- ####################################################################################################-->
+
+
+<style>
+    .container{
+        align-items:center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+
+        max-width: 1100px;
+        margin-left: auto;
+        background: #1a1a1a;
+        overflow: hidden;
+    }
+    .thumbnail{
+        align-items:center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 6.5cm;
+        height: 8.5cm;
+        margin-bottom:20px;
+
+
+    }
+    .shadowbox{
+        float:left;
+        width: 87%;
+        height: 90%;
+    }
+    .shadowbox img{
+      width:100%;
+      height:100%;
+    }
+    .desc{
+        padding: 0px;
+        color:white;
+        text-align: center;
+        float:left;
+    }
+
+
+.hovernow {
+  
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.hovernow:hover {
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.8);
+}
+
+
+</style>
+<br>
+<body>
+    <div class="container">
+    <a href='shangchi'>
+    <div class="thumbnail">
+        <div class='shadowbox hovernow'><img  src="static/movie/thumb/shangchi.jpg"></img></div>
+        <div class="desc">Shang Chi</div>
+    </div>
+    </a>
+    <a href='shershah'>
+    <div class="thumbnail">
+        <div class='shadowbox hovernow'><img  src="static/movie/thumb/shershah.jpg"></img></div>
+         <div class="desc">Shershah</div>
+    </div>
+    </a>
+    <a href='venom'>
+    <div class="thumbnail">
+         <div class='shadowbox hovernow'><img  src="static/movie/thumb/venom2.jpg"></img></div>
+        <div class="desc">Venom: Let there be carnage</div>
+    </div>
+    </a>
+    <a href='matrix'>
+    <div class="thumbnail">
+         <div class='shadowbox hovernow'><img  src="static/movie/thumb/matrix.jpg"></img></div>
+        <div class="desc">The Matrix</div>
+    </div>
+    </a>
+    <a href='purge'>
+    <div class="thumbnail">
+        <div class='shadowbox hovernow'><img  src="static/movie/thumb/purgeanarchy.jpg"></img></div>
+        <div class="desc">The Purge: Anarchy</div>
+    </div>
+    </a>
+    <a href='babysitter'>
+    <div class="thumbnail">
+        <div class='shadowbox hovernow'><img  src="static/movie/thumb/babysitter.jpg"></img></div>
+        <div class="desc">The Babysitter</div>
+    </div>
+    </a>
+    <a href='platform'>
+    <div class="thumbnail">
+        <div class='shadowbox hovernow'><img  src="static/movie/thumb/platform.jpg"></img></div>
+        <div class="desc">The Platform</div>
+    </div>
+    </a>
+    <a href='benjamin'>
+    <div class="thumbnail">
+        <div class='shadowbox hovernow'><img  src="static/movie/thumb/benjamin.jpg"></img></div>
+        <div class="desc">The Curious Case of Benjamin Button</div>
+    </div>
+    </a>
+    </div>
+
+</body>
+
+{% endblock body %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body %} 
+
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">About Me</a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Disclaimer</button>
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        MediaWare by - Dilnawaz Hossain<br>
+        21BRS1553 
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+      This website is intended only for testing purposes, and persronal use. The intent of this website never was, or is to host copyrighted material for revenue generation. This is a Non-Profit webstie.
+      </div>
+    </div>
+  </div>
+</div>
+ {% endblock body %}  

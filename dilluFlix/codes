@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dillu Flix</title>
+</head>
+<style>
+    .container{
+        max-width: 966px;
+        margin: auto;
+        background: #f2f2f2;
+        overflow: auto;
+    }
+    .thumbnail{
+        margin: 10px;
+        border: 1.4px solid #ccc;
+        float:left;
+        width: 300px
+        ;
+    }
+    .thumbnail img{
+        width: 100%;
+        height: 400px;
+    }
+    .desc{
+        padding: 15px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+    <div class="thumbnail">
+        <img src="img1.webp">
+        <div class="desc">Kimi No Na Wa</div>
+    </div>
+    <div class="thumbnail">
+        <img src="img2.jpg">
+        <div class="desc">Weathering with you</div>
+    </div>
+    <div class="thumbnail">
+        <img src="img3.jpg">
+        <div class="desc">Demon Slayer</div>
+    </div>
+    <div class="thumbnail">
+        <img src="img4.jpg">
+        <div class="desc">Code Geass</div>
+    </div>
+    <div class="thumbnail">
+        <img src="img5.jpg">
+        <div class="desc">Attack on Titan</div>
+    </div>
+    <div class="thumbnail">
+        <img src="img6.jpg">
+        <div class="desc">Naruto</div>
+    </div>
+    </div></div>
+</body>
+</html>
